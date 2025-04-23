@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #570202;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+    color: wheat;
+    padding-top: 40px; /* Espaço no topo */
+}
+
+h1, p {
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/image/Logo-Thales-Eiras-4k.jpeg');
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro do form */
+    justify-content: center;
+    margin: 0 auto; /* Centraliza o formulário na página */
+    width: 50%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.2); /* Leve destaque no fundo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    background-color: #670202;
+    color: white;
+    font-size: 16px;
+}
+
+/* Estilo para a seleção de 0 a 10 */
+select {
+    appearance: none;
+    background-color: #570202;
+    border: 2px solid wheat;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilo para o botão Enviar */
+.botao-link {
+    background-color: wheat;
+    color: #570202;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao-link:hover {
+    background-color: #ffcc99;
+}
